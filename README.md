@@ -5,4 +5,5 @@
 * Javascript
 * Webpack
 ## About the app
-<video src='./video/player.mp4' width=300/>
+Uploading 2023-04-05 11-41-21_Trim.mp4…
+
