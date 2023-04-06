@@ -1,0 +1,219 @@
+/** @format */
+
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  content: "";
+  box-sizing: inherit;
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  line-height: 2em;
+  background: #5197ed;
+  gap: 0.4em;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+.input-text {
+  margin: 0 auto;
+  display: flex;
+  gap: 0.4em;
+  width: 300px;
+  height: max-content;
+  padding: 10px;
+  border-radius: 4px;
+  background: #ecf0f3;
+}
+.input-text input {
+  width: 30px;
+}
+
+.input-text button {
+  padding: 4px 12px;
+  background: blue;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+.input-text textarea {
+  width: 270px;
+  height: 7vh;
+  resize: none;
+  outline: none;
+  border: 2px solid #333;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #333;
+}
+.input-text textarea::-webkit-scrollbar {
+  display: none;
+}
+.box,
+.input-text,
+.DoneTask {
+  margin: 30px 0 0 0;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: max-content;
+  background-color: #fff;
+  /* padding: 50px 0; */
+  border-radius: 3px;
+  gap: 0.4em;
+  margin: 0 auto;
+  overflow-y: scroll;
+  max-height: 40vh;
+  overflow-x: hidden;
+}
+.box::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 6px;
+
+}
+.DoneTask::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 6px;
+}
+.box div {
+  /* display: flex;
+  gap: 0.4em; */
+  padding: 7px 7px;
+  transition: 0.4s ease;
+  width: inherit;
+}
+.box div span {
+  display: block;
+}
+.box div span:first-child {
+  float: left;
+  width: 35%;
+  overflow-y: hidden;
+  height: 4.2vh;
+}
+.box div .time,
+.del,
+.pen,
+.complete {
+  background: orangered;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+  width: max-content;
+  margin-right: 4px;
+}
+.box div .pen,
+.complete {
+  background: cornflowerblue;
+}
+.box div:hover {
+  background: #333;
+  color: #fff;
+  transition: 0.4s ease;
+}
+
+.box h3 {
+  color: red;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.DoneTask {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: max-content;
+  background-color: #fff;
+  /* padding: 50px 0; */
+  border-radius: 3px;
+  gap: 0.4em;
+  display: none;
+    overflow-y: scroll;
+  max-height: 40vh;
+  overflow-x: hidden;
+}
+
+.DoneTask div {
+  padding: 7px 7px;
+  transition: 0.4s ease;
+  width: inherit;
+}
+.DoneTask #DoneItems {
+  float: left;
+  width: max-content;
+  font-family: sans-serif;
+}
+.DoneTask div .complt {
+  float: right;
+  background: green;
+  padding: 3px 12px;
+  border-radius: 6px;
+  width: max-content;
+  cursor: pointer;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* .time{
+  background: transparent !important;
+} */
+.time input {
+  width: 60px;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  background-color: transparent;
+  color: #ecf0f3;
+}
+.Items h2 {
+  color: #fff;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  user-select: none;
+  text-align: left;
+}
+.doneTasks h2 {
+  color: #fff;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  user-select: none;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.DoneTask div #DoneItems {
+  width: 45%;
+}
+
+
+/* Track */
+.box::-webkit-scrollbar-track, .DoneTask::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.box::-webkit-scrollbar-thumb, .DoneTask::-webkit-scrollbar-thumb {
+  background: #5197ed;
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+.box::-webkit-scrollbar-thumb:hover, .DoneTask::-webkit-scrollbar-thumb:hover {
+  background: darkgoldenrod;
+}
