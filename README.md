@@ -6,6 +6,7 @@
 * Webpack
 ## About the app
 ![todo apps  (2)](https://user-images.githubusercontent.com/98806983/230377400-34216770-05e4-4bd8-99cb-d94343ef56d7.png)
+
 To-do lists offer a way to increase productivity, stopping you from forgetting things, helps prioritise tasks, manage tasks effectively, use time wisely and improve time management as well as workflow.
 ## Features 
 * Editing of list
@@ -15,4 +16,4 @@ To-do lists offer a way to increase productivity, stopping you from forgetting t
 ## ABOUT THE AUTHOR 
 `Christian osuji` is a passioate software developer and also a BSC holder in computer science. He spent almost all day coding and making alot of usefull researches. He loves learning something new.
 
-### Thank you and don't forget to follow and give me a star. also follow me on twitter [twitter](https://twitter.com/chris-de-sypher) . Gracias ❤
+### Thank you and don't forget to follow and give me a star. also follow me on twitter [Chris-de-sypher](https://twitter.com/chris-de-sypher) . Gracias ❤
